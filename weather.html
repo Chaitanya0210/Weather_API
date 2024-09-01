@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <h1>Weather App</h1>
+
+        <div class="tab-container">
+            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+
+        <div class="weather-container">
+
+           
+            <div class="sub-container grant-location-container">
+                <img src="./images/location.png" width="80" height="80" loading="lazy">
+                <p>Grant Location Access</p>
+                <p>Allow Access to get weather Information</p>
+                <button class="btn" data-grantAccess>Grant Access</button>
+            </div>
+
+            
+            <form class="form-container" data-searchForm>
+                <input placeholder="Search for City..." data-searchInput>
+                <button class="btn" type="submit">
+                    <img src="https://up.yimg.com/ib/th?id=OIP.Vk1OASl_emKIaYue48upQQHaHw&pid=Api&rs=1&c=1&qlt=95&w=115&h=120"  width="20" height="20" loading="lazy">
+                </button>
+            </form>
+
+            
+            <div class="sub-container loading-container">
+                <img src="./images/loading.gif" width="150" height="150">
+                <p>Loading</p>
+            </div>
+
+         
+            <div class="sub-container user-info-container">
+
+               
+                <div class="name">
+                    <p data-cityName></p>
+                    <img data-countryIcon>
+                </div>
+
+            
+                <p data-weatherDesc></p>
+               
+                <img data-weatherIcon>
+                
+                <p data-temp></p>
+
+              
+                <div class="parameter-container">
+
+                   
+                    <div class="parameter">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.IpwwcjYMlNf9xpq9bivpuwHaEn&pid=Api&P=0&h=180" >
+                        <p>windspeed</p>
+                        <p data-windspeed></p>
+                    </div>
+
+                   
+                    <div class="parameter">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.ZLuVUS_aTacZa7kAE2OjTwHaFu&pid=Api&P=0&h=180" >
+                        <p>humidity</p>
+                        <p data-humidity></p>
+                    </div>
+
+                   
+                    <div class="parameter">
+                        <img src="https://tse1.mm.bing.net/th?id=OIP.P9ASOIhsn2ZAuPRrKfxD4QHaHa&pid=Api&P=0&h=180" >
+                        <p>Clouds</p>
+                        <p data-cloudiness></p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <script src="weather.js"></script>
+</body>
+</html>
